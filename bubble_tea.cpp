@@ -642,7 +642,7 @@ void Stack::orderIDSort(){ // sort algorithm by order ID
     for(int index = 0; index < max_teaType; ++index){
         node2->teaTypeCheck[index] = secTypeCheck[index];
     }
-//todo
+
     node1 = node1->nextNode;
     }
     printAllCustomerReceipt();
