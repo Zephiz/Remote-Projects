@@ -434,30 +434,30 @@ void Stack::printOneCustomerReceipt(CustomerNode *tempNode){
     date << tm.tm_mday << " " << months[tm.tm_mon] << " " << (tm.tm_year + 1900);
     TeaLink* tempLink = tempNode->headLink;
     
-    cout << "\tÃšÃ„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â¿\n";
-    cout << "\tÂ³ Order ID: " << setw(70) << left << tempNode->orderID;
-    cout << "Date: " << setw(17) << right << date.str() << " Â³\n";
-    cout << "\tÂ³ Customer Name: " << setw(65) << left << tempNode->customerName;
-    cout << "Store No: S0" << tempNode->storeNo << "           Â³\n";
-    cout << "\tÂ³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³\n";
-    cout << "\tÂ³ Item Â³  Tea Type   Â³ Quantity Â³   Flavour    Â³ Milk Â³        Add-on         Â³ Price/item Â³  Price (RM)  Â³\n";
-    
+    cout << "\tÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n";
+    cout << "\t³ Order ID: " << setw(70) << left << tempNode->orderID;
+    cout << "Date: " << setw(17) << right << date.str() << " ³\n";
+    cout << "\t³ Customer Name: " << setw(65) << left << tempNode->customerName;
+    cout << "Store No: S0" << tempNode->storeNo << "           ³\n";
+    cout << "\t³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³\n";
+    cout << "\t³ Item ³  Tea Type   ³ Quantity ³   Flavour    ³ Milk ³        Add-on         ³ Price/item ³  Price (RM)  ³\n";
+	
     while(tempLink != NULL){
-        cout << "\tÂ³Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³\n";
-        cout << "\tÂ³ " << setw(2) << right << index++ << ".  Â³  ";
-        cout << setw(9) << left << tempLink->teaInfo[TEA_TYPE] << "  Â³    ";
-        cout << setw(2) << right << tempLink->quantity << "    Â³  ";
-        cout << setw(10) << left << tempLink->teaInfo[FRUIT_FLAVOUR] << "  Â³ ";
-        cout << setw(3) << left << tempLink->teaInfo[MILK] << "  Â³  ";
-        cout << setw(19) << left << tempLink->teaInfo[ADD_ON] << "  Â³   ";
-        cout << setw(4) << right << tempLink->teaPrice << "    Â³  ";
-        cout << setw(8) << right << (static_cast<double>(tempLink->quantity)*tempLink->teaPrice) << "    Â³\n";
+        cout << "\t³ÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³\n";
+        cout << "\t³ " << setw(2) << right << index++ << ".  ³  ";
+        cout << setw(9) << left << tempLink->teaInfo[TEA_TYPE] << "  ³    ";
+        cout << setw(2) << right << tempLink->quantity << "    ³  ";
+        cout << setw(10) << left << tempLink->teaInfo[FRUIT_FLAVOUR] << "  ³ ";
+        cout << setw(3) << left << tempLink->teaInfo[MILK] << "  ³  ";
+        cout << setw(19) << left << tempLink->teaInfo[ADD_ON] << "  ³   ";
+        cout << setw(4) << right << tempLink->teaPrice << "    ³  ";
+        cout << setw(8) << right << (static_cast<double>(tempLink->quantity)*tempLink->teaPrice) << "    ³\n";
         tempLink = tempLink->nextLink;
     }
-    cout << "\tÂ³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Â³\n";
-    cout << "\tÂ³" << setw(90) << right << "TOTAL " << "Â³  ";
-    cout << setw(8) << right << tempNode->totalPrice << "    Â³\n";
-    cout << "\tÃ€Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã„Ã™\n";
+    cout << "\t³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³\n";
+    cout << "\t³" << setw(90) << right << "TOTAL " << "³  ";
+    cout << setw(8) << right << tempNode->totalPrice << "    ³\n";
+    cout << "\tÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ\n";
 }
 
 
@@ -774,46 +774,46 @@ void Stack::printMenu(){  // This function is to display BubbleTea Menu *with co
     system("cls");
     cout << std::fixed <<std::setprecision(2);
     cout << setcolour(WHITE) <<"\n\n";
-    cout << "\t                           Ã‰ÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ»\n";
-    cout << "\tÃ‰ÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¹  QQ Bubble Tea  ÃŒÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ»\n";
-    cout << "\tÂº                          ÃˆÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¼                            Âº\n";
-    cout << "\tÂº                                                                         Âº\n";
-    cout << "\tÃŒÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃ‹ÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¹\n";
+    cout << "\t                           ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»\n";
+    cout << "\tÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹  QQ Bubble Tea  ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»\n";
+    cout << "\tº                          ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼                            º\n";
+    cout << "\tº                                                                         º\n";
+    cout << "\tÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹\n";
 
-    cout << "\tÂº   "<< setcolour(LIGHT_AQUA) << "Tea Types" << setcolour(WHITE);
-    cout << "    Âº            " << setcolour(GRAY) << teaTypeList[EARL_GREY];
+    cout << "\tº   "<< setcolour(LIGHT_AQUA) << "Tea Types" << setcolour(WHITE);
+    cout << "    º            " << setcolour(GRAY) << teaTypeList[EARL_GREY];
     cout << "    " << setcolour(GREEN) << teaTypeList[JASMINE] << "    " << setcolour(BLUE) << teaTypeList[OOLONG];
-    cout << setcolour(WHITE) << "              Âº\n\tÂº" << setcolour(LIGHT_AQUA) << "     ( RM )     ";
-    cout << setcolour(WHITE) << "Âº              " << setcolour(GRAY) << teaTypePrice[EARL_GREY] <<  "        ";
+    cout << setcolour(WHITE) << "              º\n\tº" << setcolour(LIGHT_AQUA) << "     ( RM )     ";
+    cout << setcolour(WHITE) << "º              " << setcolour(GRAY) << teaTypePrice[EARL_GREY] <<  "        ";
     cout << setcolour(GREEN) << teaTypePrice[JASMINE] << "       " << setcolour(BLUE) << teaTypePrice[OOLONG] << "               " << setcolour(WHITE);
 
-    cout << "Âº\n\tÃŒÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃŽÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¹\n";
-    cout << "\tÂº " << setcolour(LIGHT_RED) << "Fruit Flavours" << setcolour(WHITE);
-    cout << " Âº    " << setcolour(LIGHT_PURPLE) << fruitFlavourList[TARO] << "    ";
+    cout << "º\n\tÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹\n";
+    cout << "\tº " << setcolour(LIGHT_RED) << "Fruit Flavours" << setcolour(WHITE);
+    cout << " º    " << setcolour(LIGHT_PURPLE) << fruitFlavourList[TARO] << "    ";
     cout << setcolour(YELLOW) << fruitFlavourList[HONEYDEW] << "    ";
     cout << setcolour(LIGHT_YELLOW) << fruitFlavourList[MANGO] << "    ";
     cout << setcolour(WHITE) << fruitFlavourList[LYCHEE] << "    ";
-    cout << setcolour(RED) << fruitFlavourList[STRAWBERRY] << setcolour(WHITE) << "   Âº\n\tÂº";
-    cout << setcolour(LIGHT_RED) << "     ( RM )     " << setcolour(WHITE) << "Âº    ";
+    cout << setcolour(RED) << fruitFlavourList[STRAWBERRY] << setcolour(WHITE) << "   º\n\tº";
+    cout << setcolour(LIGHT_RED) << "     ( RM )     " << setcolour(WHITE) << "º    ";
     cout << setcolour(LIGHT_PURPLE) << fruitFlavourPrice[TARO] << "      " << setcolour(YELLOW) << fruitFlavourPrice[HONEYDEW] << "      ";
     cout << setcolour(LIGHT_YELLOW) << fruitFlavourPrice[MANGO] << "      " << setcolour(WHITE) << fruitFlavourPrice[LYCHEE] << "        ";
     cout << setcolour(RED) << fruitFlavourPrice[STRAWBERRY] << "      " << setcolour(WHITE);
 
-    cout << "Âº\n\tÃŒÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃŽÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¹\n";
-    cout << "\tÂº     " << setcolour(BRIGHT_WHITE) << "Add on" << setcolour(WHITE);
-    cout << "     Âº    " << setcolour(PURPLE) << addOnList[CHEWY_TAPIOCA_PEARL]  << "    ";
+    cout << "º\n\tÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹\n";
+    cout << "\tº     " << setcolour(BRIGHT_WHITE) << "Add on" << setcolour(WHITE);
+    cout << "     º    " << setcolour(PURPLE) << addOnList[CHEWY_TAPIOCA_PEARL]  << "    ";
     cout << setcolour(LIGHT_GREEN) << addOnList[ALOE_VERA] << "    ";
-    cout << setcolour(AQUA) << addOnList[CHEWY_JELLY] << setcolour(WHITE) << "     Âº\n\tÂº";
-    cout << setcolour(BRIGHT_WHITE) << "     ( RM )     " << setcolour(WHITE) << "Âº           ";
+    cout << setcolour(AQUA) << addOnList[CHEWY_JELLY] << setcolour(WHITE) << "     º\n\tº";
+    cout << setcolour(BRIGHT_WHITE) << "     ( RM )     " << setcolour(WHITE) << "º           ";
     cout << setcolour(PURPLE) << addOnPrice[CHEWY_TAPIOCA_PEARL] << "              ";
     cout << setcolour(LIGHT_GREEN) << addOnPrice[ALOE_VERA] << "          ";
     cout << setcolour(AQUA) << addOnPrice[CHEWY_JELLY] << "         " << setcolour(WHITE);
 
-    cout  << "Âº\n\tÃŒÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃŠÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¹\n";
-    cout << "\tÂº                                                                         Âº\n";
-    cout << "\tÂº                            Milk is optional                             Âº\n";
-    cout << "\tÂº                               ( RM " << milkPrice[YES_MILK] << " )                               Âº\n";
-    cout << "\tÃˆÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÃÂ¼\n";
+    cout  << "º\n\tÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹\n";
+    cout << "\tº                                                                         º\n";
+    cout << "\tº                            Milk is optional                             º\n";
+    cout << "\tº                               ( RM " << milkPrice[YES_MILK] << " )                               º\n";
+    cout << "\tÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼\n";
     cout << setcolour(BRIGHT_WHITE);
 }
 
@@ -1286,36 +1286,36 @@ void welcome(){
     for(x = 11; x < 70; ++x){
         gotoxy(x,8);
         Sleep(30);
-        cout << "Ã„";
+        cout << "Ä";
     }
-    cout << "Â¿";
+    cout << "¿";
 
     for(x = 70; x > 8; --x){
         gotoxy(x,15);
         Sleep(30);
-        cout<<" Ã€ ";
+        cout<<" À ";
     }
-    
+	
     gotoxy(10,8);
-    printf("Ãš");
+    printf("Ú");
     for(y = 9; y < 15; ++y){
         gotoxy(10,y);
         Sleep(100);
-        cout << "Â³";
+        cout << "³";
     }
     
     gotoxy(70,15);
-    printf("Ã™");
+    printf("Ù");
     for(y = 14; y > 8; --y){
         gotoxy(70,y);
         Sleep(100);
-        cout << "Â³";
+        cout << "³";
     }
 
     for(x = 69; x > 10; --x){
         gotoxy(x,15);
         Sleep(30);
-        cout << "Ã„";
+        cout << "Ä";
     }
 
     gotoxy(18,10);
@@ -1325,13 +1325,13 @@ void welcome(){
         Sleep(200);
     }
     Sleep(300);
-    
+	
     string secondString = " TEA-SERIES QQ BUBBLE TEA";
     for(x = 0; x < secondString.size(); ++x){
         cout << secondString[x];
         Sleep(100);
     }
-    
+	
     gotoxy(35,13);
     printf("loading...");
     gotoxy(30,13);
@@ -1449,7 +1449,7 @@ void sans(){
 }
 
 int main(){
-    
+	
     welcome();
 
     ShowConsoleCursor(false);
@@ -1489,7 +1489,7 @@ int main(){
                 
                 do{
                     Stack::printMenu();
-            
+					
                     if (name.size() > 64)
                         cout << "\t(Name is too long, please enter again)";
 
@@ -1539,3 +1539,4 @@ int main(){
     }
     return 0;
 }
+
