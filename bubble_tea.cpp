@@ -26,7 +26,7 @@ using std::setw;
 using std::left;
 using std::right;
 using std::getline;
-
+int newcommit;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //all of these are for outputting colours
 enum Colour { BLACK, BLUE, GREEN, AQUA, RED, PURPLE, YELLOW, WHITE, GRAY, LIGHT_BLUE,
