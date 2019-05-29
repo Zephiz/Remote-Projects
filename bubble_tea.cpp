@@ -1541,7 +1541,7 @@ int main(){
     cout << "added";
     cout << "changed";
     cout << "new";
-    cout << "algorithm";
+    cout << "algorithm"; 
     return 0;
 }
 
