@@ -3,3 +3,26 @@ notes for remote:
 need to use the same github account 
 need to save file, then, git add (staged), then, git commit, then, git push
 that's it
+
+commads:
+
+   (F)
+A-B-C
+    ↑
+  master
+
+////////////////////////
+git reset --hard HEAD~1
+
+ (F)
+A-B
+  ↑
+master
+////////////////////////
+git reset HEAD~1
+
+   (F)
+A-B-C
+  ↑
+master
+////////////////////////
