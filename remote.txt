@@ -1,0 +1,5 @@
+notes for remote:
+
+need to use the same github account 
+need to save file, then, git add (staged), then, git commit, then, git push
+that's it
