@@ -26,7 +26,7 @@ using std::setw;
 using std::left;
 using std::right;
 using std::getline;
-int newline;
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //all of these are for outputting colours
 enum Colour { BLACK, BLUE, GREEN, AQUA, RED, PURPLE, YELLOW, WHITE, GRAY, LIGHT_BLUE,
@@ -1537,16 +1537,5 @@ int main(){
             }
         }
     }
-    cout << "no";
-    cout << "added";
-    cout << "changed";
-    cout << "new";
-    cout << "algorithm"; 
-    cout << "mankind"; 
-    cout << "old";
-    cout << "this will be a backup";
-    cout << "meh";
-
     return 0;
 }
-
