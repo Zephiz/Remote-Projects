@@ -1542,6 +1542,7 @@ int main(){
     cout << "changed";
     cout << "new";
     cout << "algorithm"; 
+    cout << "mankind"; 
     return 0;
 }
 
