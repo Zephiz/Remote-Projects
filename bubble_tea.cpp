@@ -1537,5 +1537,6 @@ int main(){
             }
         }
     }
+    int help;
     return 0;
 }
