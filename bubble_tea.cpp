@@ -18,7 +18,7 @@
 #include <stdint.h> // for uint8_t type
 #include <sstream> // to change date month from integer to string
 #include <time.h> //for converting between various time and date formats.
-
+int add;
 using std::cout;
 using std::string;
 using std::cin;
