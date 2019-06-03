@@ -1,6 +1,10 @@
 /.vscode
 /MinGw
 /Node
+<<<<<<< HEAD
 
 learn_cpp
 test inherit.cpp
+=======
+/learn_cpp
+>>>>>>> 0bc77112267cf4537c03ddd37127cccb041af80d
