@@ -28,3 +28,9 @@ master
 ////////////////////////
 
 //git config --global core.editor "'E:/VSCode/Code.exe' --wait --new-window --disable-extensions"
+
+git log --oneline --all --graph --decorate
+
+git config --list
+
+git push -u origin master
