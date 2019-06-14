@@ -1,0 +1,7 @@
+there's a few things to keep in mind when trying to set up remote environment 
+which is:
+
+1. using vscode pc and using vscode portable // does the location of ssh key affected?
+2. using different pcs // does it need a new ssh key to be generated?
+3. using 3 github accounts // does the main account need to be authenticate?
+4. using git clone vs using git remote add // is there any difference?

@@ -1,0 +1,47 @@
+
+In git bash
+1) ssh-keygen -t rsa -b 4096 -C "<input email addresss here>"
+2) copy the default path then press enter when prompt which file to save the key 
+   (if second ssh, rename it to something else. Do not overwrite)
+3) enter a passphrase (can be empty, empty is easier)
+4) enter again
+5) eval $(ssh-agent -s)
+6) ssh-add ~/.ssh/id_rsa (ssh-add ~/.ssh/id_rsa1 for second ssh)
+7) (enter the same passphrase if have paraphrase)
+8) clip < ~/.ssh/id_rsa.pub (clip < ~/.ssh/id_rsa1.pub for second ssh)
+
+In github remote
+1) click profile picture
+2) click on settings
+3) click on SSH and GPG keys on the left
+4) click on new SSH key
+5) give it a name and paste the key
+
+In vscode terminal
+1) git init
+2) make some files
+3) git commit -am "initial commit"
+4) copy the SSH url in github
+5) git remote add origin <paste SSH url here> (github.com change to github-something for second ssh)
+6) git push -u origin master
+7) (enter passphrase if have passphrase)
+8) done.
+
+The other vscode computer
+1) git init
+2) copy the SSH url in github
+3) git remote add origin <paste SSH url here>
+4) git pull origin master --allow-unrelated-histories
+
+For second ssh key
+1) make a config file in .ssh
+2) paste default:
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+3) paste second account
+Host github-something
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa1
