@@ -6,3 +6,4 @@ learn_cpp
 test inherit.cpp
 
 *.exe
+.history
