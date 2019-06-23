@@ -1,6 +1,6 @@
 
 In git bash
-1) ssh-keygen -t rsa -b 4096 -C "<input email addresss here>"
+1) ssh-keygen -t rsa //(optional) -b 4096 -C "<input email addresss here>"
 2) copy the default path then press enter when prompt which file to save the key 
    (if second ssh, rename it to something else. Do not overwrite)
 3) enter a passphrase (can be empty, empty is easier)
