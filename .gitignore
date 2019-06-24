@@ -3,7 +3,7 @@
 /Node
 
 learn_cpp
-test inherit.cpp
+learn.cpp
 
 *.exe
 .history
